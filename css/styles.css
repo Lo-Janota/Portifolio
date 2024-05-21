@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif; /* Define a família de fontes para o corpo do documento */
+    margin: 0; /* Remove a margem padrão do corpo */
+    padding: 0; /* Remove o preenchimento padrão do corpo */
+    background-color: #f4f4f4; /* Define a cor de fundo do corpo */
+    color: #333; /* Define a cor do texto do corpo */
+}
+
+header {
+    background-color: #0000CD; /* Define a cor de fundo do cabeçalho */
+    color: white; /* Define a cor do texto do cabeçalho */
+    text-align: center; /* Centraliza o texto no cabeçalho */
+    padding: 20px 0; /* Define o preenchimento superior e inferior do cabeçalho */
+}
+
+nav {
+    background-color: #f9f9f9; /* Define a cor de fundo da barra de navegação */
+    padding: 10px; /* Adiciona um espaço interno à barra de navegação */
+    text-align: center; /* Centraliza o texto na barra de navegação */
+}
+
+nav ul {
+    list-style-type: none; /* Remove os marcadores da lista de navegação */
+    padding: 0; /* Remove o preenchimento padrão da lista de navegação */
+    display: inline-block; /* Faz com que a lista de navegação seja exibida em linha */
+}
+
+nav ul li {
+    display: inline; /* Faz com que os itens da lista de navegação sejam exibidos em linha */
+    margin-right: 20px; /* Adiciona margem à direita entre os itens da lista de navegação */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove a decoração de texto dos links da lista de navegação */
+    color: #333; /* Define a cor do texto dos links da lista de navegação */
+    font-weight: bold; /* Define o peso da fonte dos links da lista de navegação */
+}
+
+#main {
+    padding: 40px 20px; /* Define o preenchimento interno da seção principal */
+    background-color: white; /* Define a cor de fundo da seção principal */
+    text-align: center; /* Centraliza o texto na seção principal */
+}
+
+.container {
+    max-width: 800px; /* Define a largura máxima do container */
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 20px; /* Adiciona um espaço interno ao container */
+    background-color: #fff; /* Define a cor de fundo do container */
+    border-radius: 8px; /* Adiciona bordas arredondadas ao container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao container */
+}
+
+.center {
+    display: block; /* Faz com que o elemento seja exibido como bloco */
+    margin: 20px auto; /* Centraliza o elemento na página */
+}
+
+h2 {
+    color: #0000CD; /* Define a cor do texto dos títulos de segundo nível */
+    margin-bottom: 20px; /* Adiciona margem inferior aos títulos de segundo nível */
+}
+
+h3 {
+    color: #333; /* Define a cor do texto dos títulos de terceiro nível */
+    margin-top: 30px; /* Adiciona margem superior aos títulos de terceiro nível */
+}
+
+ul {
+    list-style-type: disc; /* Define o tipo de marcador da lista não ordenada */
+    padding-left: 40px; /* Adiciona um recuo à esquerda para os itens da lista */
+    text-align: left; /* Alinha o texto à esquerda na lista */
+}
+
+ul li {
+    margin-bottom: 10px; /* Adiciona margem inferior aos itens da lista */
+}
+
+#contact {
+    display: flex; /* Usa o modelo flexbox para o layout da seção de contato */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    padding: 20px; /* Adiciona um espaço interno à seção de contato */
+}
+
+.contact-info, .contact-form {
+    flex: 1; /* Define a proporção de espaço que cada elemento deve ocupar */
+    margin: 20px; /* Adiciona margem ao redor dos elementos */
+    padding: 20px; /* Adiciona um espaço interno aos elementos */
+    background-color: #f9f9f9; /* Define a cor de fundo dos elementos */
+    border-radius: 8px; /* Adiciona bordas arredondadas aos elementos */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra aos elementos */
+}
+
+.contact-info h2, .contact-form h2 {
+    color: #0000CD; /* Define a cor do texto dos títulos das seções de contato */
+    margin-bottom: 20px; /* Adiciona margem inferior aos títulos das seções de contato */
+}
+
+.contact-info ul, .social-links {
+    list-style-type: none; /* Remove os marcadores das listas */
+    padding: 0; /* Remove o preenchimento padrão das listas */
+}
+
+.social-links li {
+    display: inline; /* Faz com que os itens da lista sejam exibidos em linha */
+    margin-right: 10px; /* Adiciona margem à direita entre os itens da lista */
+}
+
+.social-links li a {
+    text-decoration: none; /* Remove a decoração de texto dos links */
+    color: #333; /* Define a cor do texto dos links */
+    font-weight: bold; /* Define o peso da fonte dos links */
+}
+
+.contact-form label {
+    display: block; /* Faz com que as labels sejam exibidas em bloco */
+    margin-bottom: 5px; /* Adiciona margem inferior às labels */
+    font-weight: bold; /* Define o peso da fonte das labels */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Define a largura dos campos de entrada como 100% */
+    padding: 5px; /* Adiciona um espaço interno aos campos de entrada */
+    margin-bottom: 10px; /* Adiciona margem inferior aos campos de entrada */
+    border: 1px solid #ccc; /* Adiciona uma borda aos campos de entrada */
+}
+
+.contact-form button {
+    padding: 5px 10px; /* Adiciona preenchimento ao botão */
+    background-color: #333; /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+}
+
+.contact-form button:hover {
+    background-color: #555; /* Define a cor de fundo ao passar o mouse sobre o botão */
+}
+
+#about {
+    padding: 20px; /* Adiciona um espaço interno à seção "Sobre" */
+    margin: 20px auto; /* Centraliza a seção "Sobre" na página */
+    max-width: 800px; /* Define a largura máxima da seção "Sobre" */
+    background-color: #f9f9f9; /* Define a cor de fundo da seção "Sobre" */
+    border-radius: 8px; /* Adiciona bordas arredondadas à seção "Sobre" */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra à seção "Sobre" */
+}
+
+#about img {
+    display: block; /* Faz com que a imagem seja exibida como bloco */
+    margin: 0 auto 20px; /* Centraliza a imagem na página e adiciona margem inferior */
+    border-radius: 50%; /* Define um raio de borda para criar uma imagem circular */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra à imagem */
+    max-width: 200px; /* Define a largura máxima da imagem */
+}
+
+#about p {
+    text-align: justify; /* Justifica o texto na seção "Sobre" */
+    margin-bottom: 10px; /* Adiciona margem inferior ao parágrafo */
+}
+
+#about a {
+    color: #0000CD; /* Define a cor do texto dos links na seção "Sobre" */
+    text-decoration: none; /* Remove a decoração de texto dos links */
+    font-weight: bold; /* Define o peso da fonte dos links */
+}
+
+#about a:hover {
+    text-decoration: underline; /* Adiciona uma linha sublinhada ao passar o mouse sobre os links */
+}
+
+#services {
+    padding: 20px; /* Adiciona um espaço interno à seção de serviços */
+    margin: 20px auto; /* Centraliza a seção de serviços na página */
+    max-width: 800px; /* Define a largura máxima da seção de serviços */
+    background-color: #f9f9f9; /* Define a cor de fundo da seção de serviços */
+    border-radius: 8px; /* Adiciona bordas arredondadas à seção de serviços */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra à seção de serviços */
+}
+
+#services h2 {
+    text-align: center; /* Centraliza o texto do título da seção de serviços */
+    color: #333; /* Define a cor do texto do título da seção de serviços */
+    margin-bottom: 20px; /* Adiciona margem inferior ao título da seção de serviços */
+}
+
+#services ul {
+    list-style-type: none; /* Remove os marcadores da lista de serviços */
+    padding: 0; /* Remove o preenchimento padrão da lista de serviços */
+}
+
+#services li {
+    margin-bottom: 30px; /* Adiciona margem inferior aos itens da lista de serviços */
+    padding: 0 20px; /* Adiciona preenchimento aos itens da lista de serviços */
+}
+
+#services h3 {
+    color: #0000CD; /* Define a cor do texto dos títulos dos serviços */
+    margin-bottom: 10px; /* Adiciona margem inferior aos títulos dos serviços */
+}
+
+#services p {
+    margin-bottom: 5px; /* Adiciona margem inferior aos parágrafos dos serviços */
+}
+
+#services a {
+    color: #333; /* Define a cor do texto dos links nos serviços */
+    text-decoration: none; /* Remove a decoração de texto dos links */
+    font-weight: bold; /* Define o peso da fonte dos links */
+}
+
+#services a:hover {
+    text-decoration: underline; /* Adiciona uma linha sublinhada ao passar o mouse sobre os links dos serviços */
+}
+
+#services ul.service-details {
+    padding-left: 20px; /* Adiciona um recuo à esquerda para os detalhes dos serviços */
+}
+
+#services ul.service-details li {
+    list-style-type: disc; /* Define o tipo de marcador para os detalhes dos serviços */
+    margin-bottom: 5px; /* Adiciona margem inferior aos itens da lista de detalhes dos serviços */
+}

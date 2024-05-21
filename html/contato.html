@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML -->
+<html lang="en"> <!-- Elemento raiz do documento, define o idioma como inglês -->
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Define a versão do IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a escala inicial para dispositivos móveis -->
+    <title>Contato - Lorenzo Janota</title> <!-- Título da página exibido na aba do navegador -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Importa um arquivo CSS externo -->
+    <link rel="icon" type="image/png" href="/images/DarkLogoRedimensionada.png"> <!-- Ícone da página exibido na aba do navegador -->
+</head>
+<body>
+    <header> <!-- Cabeçalho da página -->
+        <h1>Contato</h1> <!-- Título principal -->
+    </header>
+    <nav> <!-- Navegação da página -->
+        <ul> <!-- Lista não ordenada -->
+            <li><a href="index.html">Página Inicial</a></li> <!-- Item de menu com link para página "index.html" -->
+            <li><a href="servicos.html">Serviços</a></li> <!-- Item de menu com link para página "servicos.html" -->
+            <li><a href="sobre.html">Sobre</a></li> <!-- Item de menu com link para página "sobre.html" -->
+        </ul>
+    </nav>
+    <section id="contact"> <!-- Seção de contato -->
+        <div class="contact-info"> <!-- Informações de contato -->
+            <h2>Entre em Contato</h2> <!-- Título secundário -->
+            <p>Estou disponível para novos projetos e oportunidades. Sinta-se à vontade para me contatar através dos seguintes meios:</p> <!-- Parágrafo introdutório -->
+            <ul> <!-- Lista de informações de contato -->
+                <li><strong>Email:</strong> lorenzo.janota@icloud.com</li> <!-- Item da lista com email -->
+                <li><strong>Telefone:</strong> (16) 981881038</li> <!-- Item da lista com telefone -->
+            </ul>
+            <h2><b>Você também pode me encontrar nas redes sociais:</b></h2> <!-- Título secundário -->
+            <ul class="social-links"> <!-- Lista de links de redes sociais -->
+                <li><a href="https://www.linkedin.com/in/lorenzo-janota-9b1177235/">LinkedIn</a></li> <!-- Item da lista com link para LinkedIn -->
+                <li><a href="https://www.instagram.com/lo_janota/">Instagram</a></li> <!-- Item da lista com link para Instagram -->
+                <li><a href="https://github.com/Lo-Janota">GitHub</a></li> <!-- Item da lista com link para GitHub -->
+            </ul>
+        </div>
+        <div class="contact-form"> <!-- Formulário de contato -->
+            <h2>Envie uma Mensagem</h2> <!-- Título secundário -->
+            <form id="contact-form"> <!-- Formulário de contato com identificador -->
+                <label for="name">Nome:</label> <!-- Rótulo do campo de nome -->
+                <input type="text" id="name" name="name" required> <!-- Campo de texto para o nome -->
+                <label for="email">Email:</label> <!-- Rótulo do campo de email -->
+                <input type="email" id="email" name="email" required> <!-- Campo de texto para o email -->
+                <label for="message">Mensagem:</label> <!-- Rótulo do campo de mensagem -->
+                <textarea id="message" name="message" required></textarea> <!-- Campo de texto para a mensagem -->
+                <button type="submit">Enviar</button> <!-- Botão de envio do formulário -->
+            </form>
+            <p id="success-message" style="display: none;">Recebemos seu email. Entraremos em contato em breve.</p> <!-- Parágrafo com mensagem de sucesso -->
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script> <!-- Importa um arquivo JavaScript externo -->
+</body>
+</html>
