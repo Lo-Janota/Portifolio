@@ -1,19 +1,19 @@
 [
   {
-    "title": "App de Finanças Pessoais",
+    "title": "Minhas Finanças ",
     "description": "Um aplicativo mobile para controle de gastos e planejamento financeiro, com gráficos interativos e categorização automática.",
     "image": "images/projeto-financas.png",
-    "tech": ["React Native", "Firebase", "Chart.js"],
+    "tech": ["Flutter", "Firebase"],
     "links": [
       { "name": "GitHub", "url": "https://github.com/seu-usuario/repo-financas" },
       { "name": "Ver na App Store", "url": "#" }
     ]
   },
   {
-    "title": "Guia de Viagens Comunitário",
-    "description": "Plataforma onde usuários podem compartilhar dicas e roteiros de viagem. Feito com foco em performance e UI limpa.",
+    "title": "Blog de Culinária",
+    "description": "Plataforma onde usuários podem compartilhar receitas com fotos, avaliações e comentários. Feita com foco em usabilidade, organização e interação entre os amantes da culinária.",
     "image": "images/projeto-viagens.png",
-    "tech": ["Swift", "UIKit", "Core Data", "MapKit"],
+    "tech": ["HTML", "CSS", "JS", "PHP"],
     "links": [
       { "name": "GitHub", "url": "https://github.com/seu-usuario/repo-viagens" }
     ]
