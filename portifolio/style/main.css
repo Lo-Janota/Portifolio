@@ -1,0 +1,340 @@
+/* --- FONTES E VARIÁVEIS GLOBAIS (RAIZ) --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  /* Esquema de Cores (Tema Claro - Padrão) */
+  --primary-color: #0077cc;
+  --primary-color-hover: #005fa3;
+  --bg-color: #f4f7f9;
+  --surface-color: #ffffff;
+  --text-color: #333333;
+  --heading-color: #1e1e1e;
+  --border-color: #e0e0e0;
+  
+  /* Sombras */
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* --- TEMA ESCURO --- */
+/* (Você pode ativar isso com a classe 'dark-theme' no <html> via JS) */
+.dark-theme {
+  --primary-color: #0099ff;
+  --primary-color-hover: #33adff;
+  --bg-color: #121212;
+  --surface-color: #1e1e1e;
+  --text-color: #e0e0e0;
+  --heading-color: #ffffff;
+  --border-color: #333333;
+}
+
+/* --- ESTILOS GERAIS E RESETS --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+main {
+  padding-top: 80px; /* Espaço para o header fixo */
+}
+
+section {
+  padding: 5rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--primary-color-hover);
+}
+
+/* --- CABEÇALHO E NAVEGAÇÃO --- */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+  backdrop-filter: blur(10px); /* Efeito de vidro fosco */
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.dark-theme .main-header {
+    background: rgba(30, 30, 30, 0.8);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-nav a {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    color: var(--heading-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* --- SEÇÃO DE APRESENTAÇÃO (HERO) --- */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.hero-content .subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  margin-bottom: 2rem;
+}
+
+.social-links a {
+  font-size: 1.8rem;
+  margin: 0 0.8rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color-hover);
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* --- SEÇÃO DE PROJETOS --- */
+#projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: var(--surface-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-info h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.project-tags {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-tags span {
+    background-color: var(--bg-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.project-links {
+    margin-top: auto; /* Empurra os links para o final do card */
+}
+
+.project-links a {
+    margin-right: 1rem;
+    font-weight: 600;
+}
+
+/* --- SEÇÃO SOBRE MIM --- */
+#sobre {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--surface-color);
+    box-shadow: var(--shadow);
+}
+
+.about-text {
+    flex: 1;
+}
+
+/* --- SEÇÃO DE TECNOLOGIAS --- */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.tech-item {
+    background: var(--surface-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s;
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+}
+
+.tech-item i {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.tech-item p {
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+
+/* --- SEÇÃO DE CONTATO E FOOTER --- */
+#contato {
+    text-align: center;
+}
+
+#contato p {
+    max-width: 500px;
+    margin: 0 auto 2rem auto;
+}
+
+.btn-secondary {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+}
+
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--surface-color);
+  border-top: 1px solid var(--border-color);
+  font-size: 0.9rem;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+  h1 { font-size: 2.8rem; }
+  h2 { font-size: 2rem; }
+  
+  .main-header {
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+  }
+
+  .main-nav ul {
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  main {
+    padding-top: 120px; /* Mais espaço para o header empilhado */
+  }
+
+  #sobre {
+    flex-direction: column;
+    text-align: center;
+  }
+}
